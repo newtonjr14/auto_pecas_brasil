@@ -1,0 +1,2550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>7 ajustes clientes e fornecedores</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/03/11 08:31:18.201</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/03/11 08:31:18.201</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>GANSO</name>
+    <server>localhost</server>
+    <type>FIREBIRD</type>
+    <access>Native</access>
+    <database>C:\Conversao\Und Presidente Prudente\Auto Pecas Brasil\Ganso.IB</database>
+    <port>3050</port>
+    <username>SYSDBA</username>
+    <password>Encrypted 2be98afc86aa7c3d2fe4bfa2986c1fd8d</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_FIREBIRD.columnLabelForName</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3050</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ajustes</from>
+      <to>1</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1</from>
+      <to>1 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 2</from>
+      <to>1 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 3</from>
+      <to>1 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 4</from>
+      <to>1 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 5</from>
+      <to>1 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 6</from>
+      <to>1 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 7</from>
+      <to>1 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 8</from>
+      <to>1 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 9</from>
+      <to>1 10</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 10</from>
+      <to>1 11</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 11</from>
+      <to>1 12</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 12</from>
+      <to>1 13</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 13</from>
+      <to>1 14</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 14</from>
+      <to>2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2</from>
+      <to>2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2 2</from>
+      <to>2 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2 3</from>
+      <to>2 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2 4</from>
+      <to>2 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2 5</from>
+      <to>4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>4</from>
+      <to>4 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>4 2</from>
+      <to>4 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>4 3</from>
+      <to>4 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>4 4</from>
+      <to>4 5</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>1</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE PDV_SETUP PS
+SET PS.GERAR_ATUALIZACAO_CAIXA = 'N',
+    PS.CODIGO_ESTOQUE_VENDAS = 1;
+
+
+
+alter trigger cliente_au1_chemit inactive;
+alter trigger cliente_bi inactive;
+alter trigger cliente_bu0 inactive;
+alter trigger cliente_bd0 inactive;
+alter trigger cliente_biu0 inactive;
+alter trigger pdv$clientepdi inactive;
+alter trigger pdv$clientepdu inactive;
+alter trigger pdv$clientepdd inactive;
+alter trigger pdv$clientepdu2 inactive;
+alter trigger cliente_aufin inactive;
+alter trigger cliente_ai1 inactive;
+alter trigger cliente_au0 inactive;
+alter trigger cliente_ad1 inactive;
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 10</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK   --RETIRA ZERO A ESQUERDA - NEWTON
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VCELULAR VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN SUBSTR(C.TELEFONE,1,1) = '0' THEN SUBSTR(C.TELEFONE,2,13)
+                ELSE C.TELEFONE
+            END TELEFONE,
+        
+            CASE
+                WHEN SUBSTR(C.CELULAR,1,1) = '0' THEN SUBSTR(C.CELULAR,2,13)
+                ELSE C.CELULAR
+            END CELULAR,
+        
+            CASE
+                WHEN SUBSTR(C.FAX,1,1) = '0' THEN SUBSTR(C.FAX, 2,13)
+                ELSE C.FAX
+            END FAX
+        FROM CLIENTE C
+    
+    INTO
+        :VCODIGO,
+        :VTELEFONE,
+        :VCELULAR,
+        :VFAX
+    
+    DO
+    BEGIN
+        UPDATE CLIENTE C
+        SET C.TELEFONE = :VTELEFONE,
+            C.CELULAR = :VCELULAR,
+            C.FAX = :VFAX
+        WHERE C.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 11</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK   --RETIRA ZERO A ESQUERDA - NEWTON
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VCELULAR VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN SUBSTR(C.TELEFONE,1,1) = '0' THEN SUBSTR(C.TELEFONE,2,13)
+                ELSE C.TELEFONE
+            END TELEFONE,
+        
+            CASE
+                WHEN SUBSTR(C.CELULAR,1,1) = '0' THEN SUBSTR(C.CELULAR,2,13)
+                ELSE C.CELULAR
+            END CELULAR,
+        
+            CASE
+                WHEN SUBSTR(C.FAX,1,1) = '0' THEN SUBSTR(C.FAX, 2,13)
+                ELSE C.FAX
+            END FAX
+        FROM FORNECEDOR C
+    
+    INTO
+        :VCODIGO,
+        :VTELEFONE,
+        :VCELULAR,
+        :VFAX
+    
+    DO
+    BEGIN
+        UPDATE FORNECEDOR C
+        SET C.TELEFONE = :VTELEFONE,
+            C.CELULAR = :VCELULAR,
+            C.FAX = :VFAX
+        WHERE C.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 12</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --TELEFONE, CELULAR E FAX  SETA 67 PRA MS
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VCELULAR VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN STRLEN(C.TELEFONE) = 8 THEN '67'||C.TELEFONE
+                ELSE C.TELEFONE
+            END TELEFONE,
+        
+            CASE
+                WHEN STRLEN(C.CELULAR) IN (8,9) THEN '67'||C.CELULAR
+                ELSE C.CELULAR
+            END CELULAR,
+        
+            CASE
+                WHEN STRLEN(C.FAX) = 8 THEN '67'||C.FAX
+                ELSE C.FAX
+            END FAX
+        FROM CLIENTE C
+        LEFT JOIN CIDADE_VILA CV ON (CV.CODIGO = C.COD_CIDADE)
+        WHERE CV.UF = 'MS'
+        AND C.CODIGO &lt;&gt; 1
+
+    INTO
+        :VCODIGO,
+        :VTELEFONE,
+        :VCELULAR,
+        :VFAX
+
+    DO
+    BEGIN
+        UPDATE CLIENTE
+        SET CLIENTE.TELEFONE = :VTELEFONE,
+            CLIENTE.CELULAR = :VCELULAR,
+            CLIENTE.FAX = :VFAX
+        WHERE CLIENTE.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 13</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --TELEFONE, CELULAR E FAX  SETA 67 MS
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VCELULAR VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN STRLEN(C.TELEFONE) = 8 THEN '67'||C.TELEFONE
+                ELSE C.TELEFONE
+            END TELEFONE,
+        
+            CASE
+                WHEN STRLEN(C.CELULAR) IN (8,9) THEN '67'||C.CELULAR
+                ELSE C.CELULAR
+            END CELULAR,
+        
+            CASE
+                WHEN STRLEN(C.FAX) = 8 THEN '67'||C.FAX
+                ELSE C.FAX
+            END FAX
+        FROM FORNECEDOR C
+        LEFT JOIN CIDADE_VILA CV ON (CV.CODIGO = C.CODIGO_CIDADE)
+        WHERE CV.UF = 'MS'
+        
+
+    INTO
+        :VCODIGO,
+        :VTELEFONE,
+        :VCELULAR,
+        :VFAX
+
+    DO
+    BEGIN
+        UPDATE FORNECEDOR
+        SET FORNECEDOR.TELEFONE = :VTELEFONE,
+            FORNECEDOR.CELULAR = :VCELULAR,
+            FORNECEDOR.FAX = :VFAX
+        WHERE FORNECEDOR.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 14</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE BACKUP_RESTORE B
+SET B.DATA_ULTIMO_BACKUP = CURRENT_DATE,
+    B.HORA_ULTIMO_BACKUP = CURRENT_TIME;
+
+
+EXECUTE PROCEDURE SP_SETAGEN('GEN_CIDADE_ID','CIDADE_VILA','CODIGO');</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+    DECLARE VARIABLE CODIGO INTEGER;
+    DECLARE VARIABLE IE VARCHAR(20);
+
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN CV.UF = 'AC' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '01' AND STRLEN(C.INSC_ESTADUAL) = 13 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AL' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '24' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AP' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '03' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AM' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'BA' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 8)  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'CE' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'DF' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '07' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'ES' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'GO' AND (SUBSTR(C.INSC_ESTADUAL,1,2) = '10' OR SUBSTR(C.INSC_ESTADUAL,1,2) = '11' OR SUBSTR(C.INSC_ESTADUAL,1,2) = '15') AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MA' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '12' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MT' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '13' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MS' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '28' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MG' AND STRLEN(C.INSC_ESTADUAL) = 13 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PA' AND STRLEN(C.INSC_ESTADUAL) = 9 AND SUBSTR(C.INSC_ESTADUAL,1,2) = '15' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PB' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PR' AND STRLEN(C.INSC_ESTADUAL) = 10 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PE' AND STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 14 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PI' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RJ' AND STRLEN(C.INSC_ESTADUAL) = 8 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RN' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 10) AND SUBSTR(C.INSC_ESTADUAL,1,2) = '20'  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RS' AND STRLEN(C.INSC_ESTADUAL) = 10 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RO' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 14)  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RR' AND STRLEN(C.INSC_ESTADUAL) = 9 AND SUBSTR(C.INSC_ESTADUAL,1,2) = '24' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SC' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SP' AND STRLEN(C.INSC_ESTADUAL) = 12 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SE' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'TO' AND STRLEN(C.INSC_ESTADUAL) = 11 THEN C.INSC_ESTADUAL
+                ELSE
+                    NULL
+            END INSC_ESTADUAL
+        
+        FROM CLIENTE C
+        JOIN CIDADE_VILA CV ON (CV.CODIGO = C.COD_CIDADE)
+        WHERE C.PESSOA = 'F'
+
+
+    INTO
+        :CODIGO,
+        :IE
+
+    DO
+    BEGIN
+        UPDATE CLIENTE
+        SET CLIENTE.INSC_ESTADUAL = :IE
+        WHERE CLIENTE.CODIGO = :CODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 3</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+    DECLARE VARIABLE CODIGO INTEGER;
+    DECLARE VARIABLE IE VARCHAR(20);
+
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            CASE
+                WHEN CV.UF = 'AC' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '01' AND STRLEN(C.INSC_ESTADUAL) = 13 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AL' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '24' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AP' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '03' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'AM' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'BA' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 8)  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'CE' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'DF' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '07' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'ES' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'GO' AND (SUBSTR(C.INSC_ESTADUAL,1,2) = '10' OR SUBSTR(C.INSC_ESTADUAL,1,2) = '11' OR SUBSTR(C.INSC_ESTADUAL,1,2) = '15') AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MA' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '12' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MT' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '13' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MS' AND SUBSTR(C.INSC_ESTADUAL,1,2) = '28' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'MG' AND STRLEN(C.INSC_ESTADUAL) = 13 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PA' AND STRLEN(C.INSC_ESTADUAL) = 9 AND SUBSTR(C.INSC_ESTADUAL,1,2) = '15' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PB' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PR' AND STRLEN(C.INSC_ESTADUAL) = 10 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PE' AND STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 14 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'PI' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RJ' AND STRLEN(C.INSC_ESTADUAL) = 8 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RN' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 10) AND SUBSTR(C.INSC_ESTADUAL,1,2) = '20'  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RS' AND STRLEN(C.INSC_ESTADUAL) = 10 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RO' AND (STRLEN(C.INSC_ESTADUAL) = 9 OR STRLEN(C.INSC_ESTADUAL) = 14)  THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'RR' AND STRLEN(C.INSC_ESTADUAL) = 9 AND SUBSTR(C.INSC_ESTADUAL,1,2) = '24' THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SC' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SP' AND STRLEN(C.INSC_ESTADUAL) = 12 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'SE' AND STRLEN(C.INSC_ESTADUAL) = 9 THEN C.INSC_ESTADUAL
+                WHEN CV.UF = 'TO' AND STRLEN(C.INSC_ESTADUAL) = 11 THEN C.INSC_ESTADUAL
+                ELSE
+                    NULL
+            END INSC_ESTADUAL
+        
+        FROM FORNECEDOR C
+        JOIN CIDADE_VILA CV ON (CV.CODIGO = C.CODIGO_CIDADE)
+        WHERE C.PESSOA = 'F'
+
+
+    INTO
+        :CODIGO,
+        :IE
+
+    DO
+    BEGIN
+        UPDATE FORNECEDOR
+        SET FORNECEDOR.INSC_ESTADUAL = :IE
+        WHERE FORNECEDOR.CODIGO = :CODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 4</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --EXTRAI NUMERO
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VNUMERO CHAR(6);
+
+BEGIN
+  FOR
+    SELECT
+    E.CODIGO,
+    SUBSTR(F_LRTRIM(E.NUMERO),1,6)AS NUMERO
+    FROM
+    (SELECT
+    C.CODIGO,
+    CASE
+      WHEN F_RIGHT(C.ENDERECO,5) SIMILAR TO '[0-9]{1}.[0-9]{3}' THEN F_RIGHT(C.ENDERECO,5)
+      WHEN F_RIGHT(C.ENDERECO,4) SIMILAR TO '[0-9]{4}' THEN F_RIGHT(C.ENDERECO,4)
+      WHEN F_RIGHT(C.ENDERECO,3) SIMILAR TO '[0-9]{3}' THEN F_RIGHT(C.ENDERECO,3)
+      WHEN F_RIGHT(C.ENDERECO,2) SIMILAR TO '[0-9]{2}' THEN F_RIGHT(C.ENDERECO,2)
+      WHEN F_RIGHT(C.ENDERECO,3) CONTAINING 'S/N' THEN 'S/N'
+      ELSE NULL
+    END NUMERO
+    FROM CLIENTE C
+    WHERE C.NUMERO IS NULL ) E
+    WHERE E.NUMERO IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VNUMERO
+
+  DO
+    BEGIN
+      UPDATE CLIENTE CL SET CL.NUMERO = :VNUMERO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 5</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VNUMERO CHAR(6);
+
+BEGIN
+  FOR
+    SELECT
+    E.CODIGO,
+    SUBSTR(F_LRTRIM(E.NUMERO),1,6)AS NUMERO
+    FROM
+    (SELECT
+    C.CODIGO,
+    CASE
+      WHEN F_RIGHT(C.ENDERECO,5) SIMILAR TO '[0-9]{1}.[0-9]{3}' THEN F_RIGHT(C.ENDERECO,5)
+      WHEN F_RIGHT(C.ENDERECO,4) SIMILAR TO '[0-9]{4}' THEN F_RIGHT(C.ENDERECO,4)
+      WHEN F_RIGHT(C.ENDERECO,3) SIMILAR TO '[0-9]{3}' THEN F_RIGHT(C.ENDERECO,3)
+      WHEN F_RIGHT(C.ENDERECO,2) SIMILAR TO '[0-9]{2}' THEN F_RIGHT(C.ENDERECO,2)
+      WHEN F_RIGHT(C.ENDERECO,3) CONTAINING 'S/N' THEN 'S/N'
+      ELSE NULL
+    END NUMERO
+    FROM FORNECEDOR C
+    WHERE C.NUMERO IS NULL ) E
+    WHERE E.NUMERO IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VNUMERO
+
+  DO
+    BEGIN
+      UPDATE FORNECEDOR CL SET CL.NUMERO = :VNUMERO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>236</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 6</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --TRIM NUMERO DO ENDEREÇO
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VENDERECO VARCHAR(45);
+
+BEGIN
+  FOR
+    SELECT
+    EN.CODIGO,
+    CASE
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),1)= ',' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-1)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),2)= ' N' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-2)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),3)= ' N=' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-3)
+      ELSE F_LRTRIM(EN.ENDERECO)
+    END AS ENDERECO
+    FROM
+      (SELECT
+        C.CODIGO,
+        CASE
+          WHEN F_RIGHT(C.ENDERECO,5) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-5)
+          WHEN F_RIGHT(C.ENDERECO,4) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-4)
+          WHEN F_RIGHT(C.ENDERECO,3) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-3)
+          WHEN F_RIGHT(C.ENDERECO,2) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-2)
+          ELSE NULL
+        END ENDERECO
+      
+      FROM CLIENTE C
+      WHERE C.NUMERO IS NOT NULL ) EN
+      WHERE NULLIF(EN.ENDERECO,'') IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VENDERECO
+
+  DO
+    BEGIN
+      UPDATE CLIENTE CL SET CL.ENDERECO = :VENDERECO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>376</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 7</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VENDERECO VARCHAR(45);
+
+BEGIN
+  FOR
+    SELECT
+    EN.CODIGO,
+    CASE
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),1)= ',' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-1)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),2)= ' N' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-2)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),3)= ' N=' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-3)
+      ELSE F_LRTRIM(EN.ENDERECO)
+    END AS ENDERECO
+    FROM
+      (SELECT
+        C.CODIGO,
+        CASE
+          WHEN F_RIGHT(C.ENDERECO,5) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-5)
+          WHEN F_RIGHT(C.ENDERECO,4) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-4)
+          WHEN F_RIGHT(C.ENDERECO,3) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-3)
+          WHEN F_RIGHT(C.ENDERECO,2) = C.NUMERO THEN SUBSTR(C.ENDERECO,1,STRLEN(C.ENDERECO)-2)
+          ELSE NULL
+        END ENDERECO
+      
+      FROM FORNECEDOR C
+      WHERE C.NUMERO IS NOT NULL ) EN
+      WHERE NULLIF(EN.ENDERECO,'') IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VENDERECO
+
+  DO
+    BEGIN
+      UPDATE FORNECEDOR CL SET CL.ENDERECO = :VENDERECO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>516</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 8</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE CLIENTE C SET C.CODIGO_LOGRADOURO =     --TRIM RUA
+  CASE
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R.'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R;'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R:'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA.'     THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R '       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'ROD.'     THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'ROD'      THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'AV.'      THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'AV'       THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN 6
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'FAZ.'     THEN 6
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'FAZ'      THEN 6
+    ELSE 5
+  END ,
+  C.ENDERECO =
+  CASE
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA '     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R.'       THEN LTRIM(SUBSTR(C.ENDERECO,3,48))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R;'       THEN LTRIM(SUBSTR(C.ENDERECO,3,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R:'       THEN LTRIM(SUBSTR(C.ENDERECO,3,46))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R '       THEN LTRIM(SUBSTR(C.ENDERECO,2,46))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'RODOVIA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'ROD.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,50))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'ROD'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'AVENIDA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'AV.'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'AV'       THEN LTRIM(SUBSTR(C.ENDERECO,3,49))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'FAZENDA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'FAZ.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'FAZ'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    ELSE C.ENDERECO
+  END;
+
+
+
+UPDATE FORNECEDOR C SET C.CODIGO_LOGRADOURO =
+  CASE
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R.'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R;'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R:'       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA.'     THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R '       THEN 5
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'ROD.'     THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'ROD'      THEN 2
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'AV.'      THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'AV'       THEN 1
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN 6
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'FAZ.'     THEN 6
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'FAZ'      THEN 6
+    ELSE 5
+  END ,
+  C.ENDERECO =
+  CASE
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA '     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'RUA.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R.'       THEN LTRIM(SUBSTR(C.ENDERECO,3,48))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R;'       THEN LTRIM(SUBSTR(C.ENDERECO,3,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R:'       THEN LTRIM(SUBSTR(C.ENDERECO,3,46))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'R '       THEN LTRIM(SUBSTR(C.ENDERECO,2,46))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'RODOVIA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'ROD.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,50))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'ROD'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'AVENIDA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'AV.'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    WHEN SUBSTR(C.ENDERECO,1,2) CONTAINING 'AV'       THEN LTRIM(SUBSTR(C.ENDERECO,3,49))
+    WHEN SUBSTR(C.ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN LTRIM(SUBSTR(C.ENDERECO,9,54))
+    WHEN SUBSTR(C.ENDERECO,1,7) CONTAINING 'FAZENDA'  THEN LTRIM(SUBSTR(C.ENDERECO,8,53))
+    WHEN SUBSTR(C.ENDERECO,1,4) CONTAINING 'FAZ.'     THEN LTRIM(SUBSTR(C.ENDERECO,5,49))
+    WHEN SUBSTR(C.ENDERECO,1,3) CONTAINING 'FAZ'      THEN LTRIM(SUBSTR(C.ENDERECO,4,49))
+    ELSE C.ENDERECO
+  END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>1 9</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+    DECLARE VARIABLE CODIGO INTEGER;
+    DECLARE VARIABLE ENDERECO VARCHAR(45);
+
+BEGIN
+    FOR
+        SELECT
+            C1.CODIGO,
+            LTRIM(F_REPLACE(C1.ENDERECO,',',''))
+        
+        FROM(
+        
+                SELECT
+                    C.CODIGO,
+                    LTRIM(F_REPLACE(C.ENDERECO,':','')) AS ENDERECO
+                FROM CLIENTE C
+                WHERE SUBSTR(C.ENDERECO,1,1) = ':'
+                OR SUBSTR(C.ENDERECO,1,1) = ','
+            )C1
+
+    INTO
+        :CODIGO,
+        :ENDERECO
+    DO
+    BEGIN
+        UPDATE CLIENTE C
+        SET C.ENDERECO = :ENDERECO
+        WHERE C.CODIGO = :CODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>796</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --CRIA PROPRIEDADE PARA PESSOA FÍSICA COM INSCRIÇÃO ESTADUAL E SETA NULL NA IE DO CLIENTE
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VENDERECO VARCHAR(50);
+    DECLARE VARIABLE VNUMERO VARCHAR(6);
+    DECLARE VARIABLE VBAIRRO VARCHAR(50);
+    DECLARE VARIABLE VCOMPLEMENTO VARCHAR(60);
+    DECLARE VARIABLE VCEP VARCHAR(8);
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+    DECLARE VARIABLE VCONTRIBUINTE CHAR;
+    DECLARE VARIABLE VINSC_ESTADUAL VARCHAR(20);
+    DECLARE VARIABLE VNOME VARCHAR(40);
+    DECLARE VARIABLE VCODIGO_CIDADE INTEGER;
+    DECLARE VARIABLE VUF VARCHAR(2);
+    DECLARE VARIABLE VCOD_LOGRA INTEGER;
+
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            C.ENDERECO,
+            C.NUMERO,
+            C.BAIRRO,
+            C.COMPLEMENTO,
+            C.CEP,
+            C.TELEFONE,
+            C.FAX,
+            'S',
+            C.INSC_ESTADUAL,
+            SUBSTR(C.ENDERECO,1,40) AS NOME,
+            C.COD_CIDADE AS CODIGO_CIDADE,
+            CV.UF,
+            C.CODIGO_LOGRADOURO
+        FROM CLIENTE C
+        LEFT JOIN CIDADE_VILA CV ON (CV.CODIGO = C.COD_CIDADE)
+        WHERE C.CNPJ IS NULL
+        AND C.INSC_ESTADUAL IS NOT NULL
+
+    INTO
+        :VCODIGO,
+        :VENDERECO, :VNUMERO,
+        :VBAIRRO, :VCOMPLEMENTO,
+        :VCEP, :VTELEFONE,
+        :VFAX, :VCONTRIBUINTE,
+        :VINSC_ESTADUAL, :VNOME,
+        :VCODIGO_CIDADE, :VUF, :VCOD_LOGRA
+
+    DO
+    BEGIN
+        INSERT INTO CLIENTE_PROPRIEDADE (CODIGO_CLIENTE,
+                                            ENDERECO, NUMERO,
+                                            BAIRRO, COMPLEMENTO,
+                                            CEP, TELEFONE,
+                                            FAX, CONTRIBUINTE_ICMS,
+                                            INSC_ESTADUAL, NOME,
+                                            CODIGO_CIDADE, UF, CODIGO_LOGRADOURO)
+
+                                        VALUES (:VCODIGO,
+                                                :VENDERECO, :VNUMERO,
+                                                :VBAIRRO, :VCOMPLEMENTO,
+                                                :VCEP, :VTELEFONE,
+                                                :VFAX, :VCONTRIBUINTE,
+                                                :VINSC_ESTADUAL, :VNOME,
+                                                :VCODIGO_CIDADE, :VUF, :VCOD_LOGRA);
+        
+        UPDATE CLIENTE
+        SET CLIENTE.INSC_ESTADUAL = NULL
+        WHERE CLIENTE.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>2 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --CRIA PROPRIEDADE PARA PESSOA FÍSICA COM INSCRIÇÃO ESTADUAL E SETA NULL NA IE DO FORNECEDOR
+AS
+    DECLARE VARIABLE VCODIGO INTEGER;
+    DECLARE VARIABLE VENDERECO VARCHAR(50);
+    DECLARE VARIABLE VNUMERO VARCHAR(6);
+    DECLARE VARIABLE VBAIRRO VARCHAR(50);
+    DECLARE VARIABLE VCOMPLEMENTO VARCHAR(60);
+    DECLARE VARIABLE VCEP VARCHAR(8);
+    DECLARE VARIABLE VTELEFONE VARCHAR(13);
+    DECLARE VARIABLE VFAX VARCHAR(13);
+    DECLARE VARIABLE VCONTRIBUINTE CHAR;
+    DECLARE VARIABLE VINSC_ESTADUAL VARCHAR(20);
+    DECLARE VARIABLE VNOME VARCHAR(40);
+    DECLARE VARIABLE VCODIGO_CIDADE INTEGER;
+    DECLARE VARIABLE VUF VARCHAR(2);
+    DECLARE VARIABLE VCOD_LOGRA INTEGER;
+
+BEGIN
+    FOR
+        SELECT
+            C.CODIGO,
+            C.ENDERECO,
+            C.NUMERO,
+            C.BAIRRO,
+            C.COMPLEMENTO,
+            C.CEP,
+            C.TELEFONE,
+            C.FAX,
+            'S',
+            C.INSC_ESTADUAL,
+            SUBSTR(C.ENDERECO,1,40) AS NOME,
+            C.CODIGO_CIDADE AS CODIGO_CIDADE,
+            CV.UF,
+            C.CODIGO_LOGRADOURO
+        FROM FORNECEDOR C
+        LEFT JOIN CIDADE_VILA CV ON (CV.CODIGO = C.CODIGO_CIDADE)
+        WHERE C.CNPJ IS NULL
+        AND C.INSC_ESTADUAL IS NOT NULL
+
+    INTO
+        :VCODIGO,
+        :VENDERECO, :VNUMERO,
+        :VBAIRRO, :VCOMPLEMENTO,
+        :VCEP, :VTELEFONE,
+        :VFAX, :VCONTRIBUINTE,
+        :VINSC_ESTADUAL, :VNOME,
+        :VCODIGO_CIDADE, :VUF, :VCOD_LOGRA
+
+    DO
+    BEGIN
+        INSERT INTO CLIENTE_PROPRIEDADE (CODIGO_FORNECEDOR,
+                                            ENDERECO, NUMERO,
+                                            BAIRRO, COMPLEMENTO,
+                                            CEP, TELEFONE,
+                                            FAX, CONTRIBUINTE_ICMS,
+                                            INSC_ESTADUAL, NOME,
+                                            CODIGO_CIDADE, UF, CODIGO_LOGRADOURO)
+
+                                        VALUES (:VCODIGO,
+                                                :VENDERECO, :VNUMERO,
+                                                :VBAIRRO, :VCOMPLEMENTO,
+                                                :VCEP, :VTELEFONE,
+                                                :VFAX, :VCONTRIBUINTE,
+                                                :VINSC_ESTADUAL, :VNOME,
+                                                :VCODIGO_CIDADE, :VUF, :VCOD_LOGRA);
+        
+        UPDATE FORNECEDOR
+        SET FORNECEDOR.INSC_ESTADUAL = NULL
+        WHERE FORNECEDOR.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>2 3</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+    DECLARE VARIABLE CODIGO INTEGER;
+    DECLARE VARIABLE NOME VARCHAR(40);
+
+BEGIN
+    FOR
+        SELECT
+            CP.CODIGO,
+            SUBSTR(C.NOME,1,40)
+        FROM CLIENTE_PROPRIEDADE CP
+        JOIN CLIENTE C ON (C.CODIGO = CP.CODIGO_CLIENTE)
+        WHERE CP.NOME IS NULL OR CP.NOME = ''
+        AND CP.CODIGO_CLIENTE IS NOT NULL
+
+    INTO
+        :CODIGO,
+        :NOME
+
+    DO
+    BEGIN
+        UPDATE CLIENTE_PROPRIEDADE CP
+        SET CP.NOME = :NOME
+        WHERE CP.CODIGO = :CODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>2 4</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+    DECLARE VARIABLE CODIGO INTEGER;
+    DECLARE VARIABLE NOME VARCHAR(40);
+
+BEGIN
+    FOR
+        SELECT
+            CP.CODIGO,
+            SUBSTR(C.NOME,1,40)
+        FROM CLIENTE_PROPRIEDADE CP
+        JOIN FORNECEDOR C ON (C.CODIGO = CP.CODIGO_FORNECEDOR)
+        WHERE CP.NOME IS NULL OR CP.NOME = ''
+        AND CP.CODIGO_FORNECEDOR IS NOT NULL
+
+    INTO
+        :CODIGO,
+        :NOME
+
+    DO
+    BEGIN
+        UPDATE CLIENTE_PROPRIEDADE CP
+        SET CP.NOME = :NOME
+        WHERE CP.CODIGO = :CODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>2 5</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE CLIENTE C
+SET C.RG = NULL
+WHERE C.PESSOA = 'J';
+
+
+
+
+UPDATE FORNECEDOR F
+SET F.RG = NULL
+WHERE F.PESSOA = 'J';
+
+
+
+
+DELETE FROM CLIENTE_PROPRIEDADE CP
+WHERE (CP.UF IS NULL OR CP.INSC_ESTADUAL IS NULL) ;
+
+
+
+UPDATE FORNECEDOR F
+SET F.RG =
+CASE
+    WHEN F.PESSOA = 'J' THEN NULL
+    ELSE F.RG
+END,
+F.INSC_ESTADUAL =
+CASE
+    WHEN F.PESSOA = 'F' THEN NULL
+    ELSE
+        F.INSC_ESTADUAL
+END;
+
+
+
+
+
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>4</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --EXTRAI NUMERO
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VNUMERO CHAR(6);
+
+BEGIN
+  FOR
+    SELECT
+    E.CODIGO,
+    SUBSTR(F_LRTRIM(E.NUMERO),1,6)AS NUMERO
+    FROM
+    (SELECT
+    C.CODIGO,
+    CASE
+      WHEN F_RIGHT(C.COB_ENDERECO,5) SIMILAR TO '[0-9]{1}.[0-9]{3}' THEN F_RIGHT(C.COB_ENDERECO,5)
+      WHEN F_RIGHT(C.COB_ENDERECO,4) SIMILAR TO '[0-9]{4}' THEN F_RIGHT(C.COB_ENDERECO,4)
+      WHEN F_RIGHT(C.COB_ENDERECO,3) SIMILAR TO '[0-9]{3}' THEN F_RIGHT(C.COB_ENDERECO,3)
+      WHEN F_RIGHT(C.COB_ENDERECO,2) SIMILAR TO '[0-9]{2}' THEN F_RIGHT(C.COB_ENDERECO,2)
+      WHEN F_RIGHT(C.COB_ENDERECO,3) CONTAINING 'S/N' THEN 'S/N'
+      ELSE NULL
+    END NUMERO
+    FROM CLIENTE C
+    WHERE C.COB_NUMERO IS NULL ) E
+    WHERE E.NUMERO IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VNUMERO
+
+  DO
+    BEGIN
+      UPDATE CLIENTE CL SET CL.COB_NUMERO = :VNUMERO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>4 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK --TRIM NUMERO DO ENDEREÇO
+AS
+  DECLARE VARIABLE VCODIGO INTEGER;
+  DECLARE VARIABLE VENDERECO VARCHAR(45);
+
+BEGIN
+  FOR
+    SELECT
+    EN.CODIGO,
+    CASE
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),1)= ',' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-1)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),2)= ' N' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-2)
+      WHEN F_RIGHT(F_LRTRIM(EN.ENDERECO),3)= ' N=' THEN SUBSTR(F_LRTRIM(EN.ENDERECO),1,STRLEN(F_LRTRIM(EN.ENDERECO))-3)
+      ELSE F_LRTRIM(EN.ENDERECO)
+    END AS ENDERECO
+    FROM
+      (SELECT
+        C.CODIGO,
+        CASE
+          WHEN F_RIGHT(C.COB_ENDERECO,5) = C.NUMERO THEN SUBSTR(C.COB_ENDERECO,1,STRLEN(C.COB_ENDERECO)-5)
+          WHEN F_RIGHT(C.COB_ENDERECO,4) = C.NUMERO THEN SUBSTR(C.COB_ENDERECO,1,STRLEN(C.COB_ENDERECO)-4)
+          WHEN F_RIGHT(C.COB_ENDERECO,3) = C.NUMERO THEN SUBSTR(C.COB_ENDERECO,1,STRLEN(C.COB_ENDERECO)-3)
+          WHEN F_RIGHT(C.COB_ENDERECO,2) = C.NUMERO THEN SUBSTR(C.COB_ENDERECO,1,STRLEN(C.COB_ENDERECO)-2)
+          ELSE NULL
+        END ENDERECO
+      
+      FROM CLIENTE C
+      WHERE C.COB_NUMERO IS NOT NULL ) EN
+      WHERE NULLIF(EN.ENDERECO,'') IS NOT NULL
+
+  INTO
+    :VCODIGO,
+    :VENDERECO
+
+  DO
+    BEGIN
+      UPDATE CLIENTE CL SET CL.COB_ENDERECO = :VENDERECO WHERE CL.CODIGO = :VCODIGO;
+    END
+END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>4 3</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE CLIENTE C SET C.COB_CODIGO_LOGRADOURO =     --TRIM RUA
+  CASE
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R.'       THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R;'       THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R:'       THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'RUA.'     THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'RUA'      THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R '       THEN 5
+    WHEN SUBSTR(C.COB_ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN 2
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'ROD.'     THEN 2
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'ROD'      THEN 2
+    WHEN SUBSTR(C.COB_ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN 1
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'AV.'      THEN 1
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'AV'       THEN 1
+    WHEN SUBSTR(C.COB_ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN 6
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'FAZ.'     THEN 6
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'FAZ'      THEN 6
+    ELSE 5
+  END ,
+  C.COB_ENDERECO =
+  CASE
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'RUA '     THEN LTRIM(SUBSTR(C.COB_ENDERECO,5,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'RUA.'     THEN LTRIM(SUBSTR(C.COB_ENDERECO,5,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.COB_ENDERECO,4,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'RUA'      THEN LTRIM(SUBSTR(C.COB_ENDERECO,4,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R.'       THEN LTRIM(SUBSTR(C.COB_ENDERECO,3,48))
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R;'       THEN LTRIM(SUBSTR(C.COB_ENDERECO,3,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R:'       THEN LTRIM(SUBSTR(C.COB_ENDERECO,3,46))
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'R '       THEN LTRIM(SUBSTR(C.COB_ENDERECO,2,46))
+    WHEN SUBSTR(C.COB_ENDERECO,1,8) CONTAINING 'RODOVIA ' THEN LTRIM(SUBSTR(C.COB_ENDERECO,9,54))
+    WHEN SUBSTR(C.COB_ENDERECO,1,7) CONTAINING 'RODOVIA'  THEN LTRIM(SUBSTR(C.COB_ENDERECO,8,53))
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'ROD.'     THEN LTRIM(SUBSTR(C.COB_ENDERECO,5,50))
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'ROD'      THEN LTRIM(SUBSTR(C.COB_ENDERECO,4,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,8) CONTAINING 'AVENIDA ' THEN LTRIM(SUBSTR(C.COB_ENDERECO,9,54))
+    WHEN SUBSTR(C.COB_ENDERECO,1,7) CONTAINING 'AVENIDA'  THEN LTRIM(SUBSTR(C.COB_ENDERECO,8,53))
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'AV.'      THEN LTRIM(SUBSTR(C.COB_ENDERECO,4,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,2) CONTAINING 'AV'       THEN LTRIM(SUBSTR(C.COB_ENDERECO,3,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,8) CONTAINING 'FAZENDA ' THEN LTRIM(SUBSTR(C.COB_ENDERECO,9,54))
+    WHEN SUBSTR(C.COB_ENDERECO,1,7) CONTAINING 'FAZENDA'  THEN LTRIM(SUBSTR(C.COB_ENDERECO,8,53))
+    WHEN SUBSTR(C.COB_ENDERECO,1,4) CONTAINING 'FAZ.'     THEN LTRIM(SUBSTR(C.COB_ENDERECO,5,49))
+    WHEN SUBSTR(C.COB_ENDERECO,1,3) CONTAINING 'FAZ'      THEN LTRIM(SUBSTR(C.COB_ENDERECO,4,49))
+    ELSE C.COB_ENDERECO
+  END;
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>4 4</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>EXECUTE BLOCK
+AS
+DECLARE VARIABLE VCODIGO INTEGER;
+DECLARE VARIABLE VCOD_LOGRADOURO INTEGER;
+DECLARE VARIABLE VENDERECO VARCHAR(45);
+DECLARE VARIABLE VNUMERO VARCHAR(6);
+DECLARE VARIABLE VCEP VARCHAR(8);
+DECLARE VARIABLE VBAIRRO VARCHAR(25);
+DECLARE VARIABLE VCOMPLEMENTO VARCHAR(60);
+DECLARE VARIABLE VCOD_CIDADE INTEGER;
+DECLARE VARIABLE VEMAIL VARCHAR(350);
+DECLARE VARIABLE VUF VARCHAR(2);
+BEGIN
+FOR
+
+SELECT
+    C.CODIGO,
+    C.CODIGO_LOGRADOURO,
+    C.ENDERECO,
+    C.NUMERO,
+    C.CEP,
+    C.BAIRRO,
+    C.COMPLEMENTO,
+    C.COD_CIDADE,
+    C.EMAIL,
+    C.UF
+FROM CLIENTE C
+
+INTO
+
+ :VCODIGO,
+ :VCOD_LOGRADOURO,
+ :VENDERECO,
+ :VNUMERO,
+ :VCEP,
+ :VBAIRRO,
+ :VCOMPLEMENTO,
+ :VCOD_CIDADE,
+ :VEMAIL,
+ :VUF
+
+ DO
+ BEGIN
+    UPDATE CLIENTE C
+    SET C.COB_CODIGO_LOGRADOURO = :VCOD_LOGRADOURO,
+        C.COB_ENDERECO = :VENDERECO,
+        C.COB_NUMERO = :VNUMERO,
+        C.COB_CEP = :VCEP,
+        C.COB_BAIRRO = :VBAIRRO,
+        C.COB_COMPLEMENTO = :VCOMPLEMENTO,
+        C.COB_COD_CIDADE = :VCOD_CIDADE,
+        C.COB_EMAIL = :VEMAIL,
+    C.COB_UF = :VUF
+    WHERE C.CODIGO = :VCODIGO
+    AND (C.COB_ENDERECO IS NULL OR C.COB_ENDERECO = '');
+ END
+ END;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>4 5</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>GANSO</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>alter trigger cliente_au1_chemit active;
+alter trigger cliente_bi active;
+alter trigger cliente_bu0 active;
+alter trigger cliente_bd0 active;
+alter trigger cliente_biu0 active;
+alter trigger pdv$clientepdi active;
+alter trigger pdv$clientepdu active;
+alter trigger pdv$clientepdd active;
+alter trigger pdv$clientepdu2 active;
+alter trigger cliente_aufin active;
+alter trigger cliente_ai1 active;
+alter trigger cliente_au0 active;
+alter trigger cliente_ad1 active;
+
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ajustes</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>a</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
